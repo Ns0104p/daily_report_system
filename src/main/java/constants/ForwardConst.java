@@ -15,7 +15,7 @@ public enum ForwardConst {
 
     //       command
     CMD("command"),
-    CMD_NODE(""),
+    CMD_NONE(""),
     CMD_INDEX("index"),
     CMD_SHOW("show"),
     CMD_SHOW_LOGIN("showLogin"),
@@ -28,7 +28,7 @@ public enum ForwardConst {
     CMD_DESTROY("destroy"),
 
     //        jsp
-    FW_ERR_UNKNOW("error/unknow"),
+    FW_ERR_UNKNOWN("error/unknown"),
     FW_TOP_INDEX("topPage/index"),
     FW_LOGIN("login/login"),
     FW_EMP_INDEX("employees/index"),
