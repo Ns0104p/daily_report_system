@@ -53,7 +53,7 @@ String JPQL_PARM_EMPLOYEE="employee";//従業員
 //NameQueryのnameとquery
 //全ての従業員をidの降順に取得する
 String Q_EMP_GET_ALL = ENTITY_EMP+".getALL";
-String Q_EMP_GET_ALL_DEF = "SELECT e FROM Employee As e ORDER BY e.id DESC";//query
+String Q_EMP_GET_ALL_DEF = "SELECT e FROM Employee AS e ORDER BY e.id DESC";//query
 //全ての従業員の件数を取得する
 String Q_EMP_COUNT=ENTITY_EMP +".count";
 String Q_EMP_COUNT_DEF="SELECT COUNT(e) FROM Employee AS e";
