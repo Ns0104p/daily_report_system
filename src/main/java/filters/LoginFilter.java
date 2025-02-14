@@ -84,7 +84,7 @@ public class LoginFilter implements Filter {
                                         + "?action=" + ForwardConst.ACT_TOP.getValue()
                                         + "&command=" + ForwardConst.CMD_INDEX.getValue());
                         return;
-                    } else if (ForwardConst.CMD_LOGIN.getValue().equals(command)) {
+                    } else if (ForwardConst.CMD_LOGOUT.getValue().equals(command)) {
                         //                        ログアウトの実施は許可
 
                     } else {
