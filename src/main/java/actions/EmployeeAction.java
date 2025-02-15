@@ -174,7 +174,7 @@ public class EmployeeAction extends ActionBase {
 
             if (ev == null || ev.getDeleteFlag() == AttributeConst.DEL_FLAG_TRUE.getIntegerValue()) {
 
-                //            データが取得できなかった、または論理策ｊｙ9押されている場合はエラー画面を表示
+                //            データが取得できなかった、または論理削除されている場合はエラー画面を表示
                 forward(ForwardConst.FW_ERR_UNKNOWN);
                 return;
 
@@ -250,7 +250,7 @@ public class EmployeeAction extends ActionBase {
             service.destroy(toNumber(getRequestParam(AttributeConst.EMP_ID)));
 
             //            セッションに削除完了のフラッシュメッセージを設定
-            putRequestScope(AttributeConst.FLUSH, MessageConst.I_DELETED.getMessage());
+            putSessionScope(AttributeConst.FLUSH, MessageConst.I_DELETED.getMessage());
 
             //            一覧画面にリダイレクト
             redirect(ForwardConst.ACT_EMP, ForwardConst.CMD_INDEX);
